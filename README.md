@@ -110,8 +110,7 @@ Manages SSL certificate resources for HTTPS traffic on the load balancer.
 ---
 
 
-# GCP Terraform Infrastructure Setup
-
+# PRE-REQUIREMENTS
 This repository provides a Terraform configuration for setting up a GCP-based infrastructure to host a private Google Cloud Storage bucket accessible through an HTTPS load balancer, with SSL certificate management and IAM configurations. The setup is divided into several environment-specific configurations (e.g., `dev`), allowing flexibility in managing multiple environments like `dev`, `prod`, etc.
 
 ## Preparation
@@ -142,6 +141,12 @@ Before running this Terraform configuration, you need to complete a few preparat
 Purpose: Authenticates applications running on your local machine, setting up application-level credentials for Google Cloud APIs.
 Usage: This command is used to set the Application Default Credentials (ADC), allowing applications to authenticate with Google Cloud APIs in a way that simulates how they would run in infra
 ::::::When you run gcloud auth application-default login, it opens a browser window for authentication, then stores the credentials in a JSON file in a specific location (~/.config/gcloud/application_default_credentials.json). These credentials are used by Google Cloud client libraries (like google-auth ) to authenticate requests. terraform will use for example
+
+### 3. terraform coding
+terraform init --backend-config=./dev/backend.hcl
+terraform plan  --var-file=./dev/values.tfvars
+terraform apply  --var-file=./dev/values.tfvars
+terraform destroy  --var-file=./dev/values.tfvars
 
 
 ==================
