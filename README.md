@@ -287,3 +287,4 @@ IT WILL TAKES LITTLE TIME BUT TO REFACTOR ALL THIS AS MODULAR < WOULD BE BETTER 
       |    Content)             |
       +-------------------------+
 
+![Alt text](image.png)
