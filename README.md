@@ -4,7 +4,7 @@ This repository provides a Terraform configuration for setting up a GCP-based in
 
 ## Structure and Purpose
 
-P>S tf_foudnation folder
+P.S tf_foudnation folder
 to create remote backend bucket for relevant env to save state, p.s you can create it manualy in advance ,but this repo creates with tf for this repo backend used local
 
 - **`dev/` Folder**: Contains environment-specific configurations, such as backend state settings and unique values for the development environment.
