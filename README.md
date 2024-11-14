@@ -143,33 +143,14 @@ Usage: This command is used to set the Application Default Credentials (ADC), al
 ::::::When you run gcloud auth application-default login, it opens a browser window for authentication, then stores the credentials in a JSON file in a specific location (~/.config/gcloud/application_default_credentials.json). These credentials are used by Google Cloud client libraries (like google-auth ) to authenticate requests. terraform will use for example
 
 ### 3. terraform coding
-terraform init --backend-config=./dev/backend.hcl
-terraform plan  --var-file=./dev/values.tfvars
-terraform apply  --var-file=./dev/values.tfvars
-terraform destroy  --var-file=./dev/values.tfvars
+  ```bash
+  terraform init --backend-config=./dev/backend.hcl
+  terraform plan  --var-file=./dev/values.tfvars
+  terraform apply  --var-file=./dev/values.tfvars
+  terraform destroy  --var-file=./dev/values.tfvars
 
 
 ==================
-
-                    open url   ( in our test case tf-xdatalab1t.net)
-                       |
-          +---------------------------+
-          |     Global HTTPS Proxy    |
-          +---------------------------+
-                       |
-             External Forwarding Rules
-                       |
-              Target HTTPS Proxy ---- SSL Certificates
-                       |
-                    URL Map
-                       |
-                 Backend Service (CDN)
-                       |
-            Network Endpoint Group ---- Network Endpoint (GCS Bucket)
-                       |
-                 Google Cloud Storage Bucket
-
-
 
 GCP CDN and HTTPS Load Balancer Architecture
 This setup represents a GCP (Google Cloud Platform) infrastructure for serving content stored in a Google Cloud Storage (GCS) bucket through a Content Delivery Network (CDN) using an HTTPS Load Balancer with SSL certificates.
