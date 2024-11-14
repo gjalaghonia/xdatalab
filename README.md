@@ -111,7 +111,6 @@ Manages SSL certificate resources for HTTPS traffic on the load balancer.
 
 
 # PRE-REQUIREMENTS
-This repository provides a Terraform configuration for setting up a GCP-based infrastructure to host a private Google Cloud Storage bucket accessible through an HTTPS load balancer, with SSL certificate management and IAM configurations. The setup is divided into several environment-specific configurations (e.g., `dev`), allowing flexibility in managing multiple environments like `dev`, `prod`, etc.
 
 ## Preparation
 
