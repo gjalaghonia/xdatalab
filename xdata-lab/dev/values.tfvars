@@ -1,0 +1,15 @@
+bucket_name               = "tf-web-xdatalab"
+region                    = "europe-west3"
+enable_bucket_versioning  = false
+create_certs              = false   ##  use this true if you want to attach google managed ssl for you dns lb, for tetsing purpose used fake selfgh sighn ssl generated manually
+project_id                = "xdatalab1"
+access_key_version        = "latest"
+create_global_address     = true
+global_address            = ""
+domain_name               = "tf-xdatalab1t.net"
+dns_zone                  = "tf-xdatalab1"
+create_dns_record         = true
+prefix                    = "tf-dev"
+# custom_domain             = "xdatalab1.net"
+# dns_zone_name             = "xdatalab1"
+# sa_id                     = "xdatalab1sa"
