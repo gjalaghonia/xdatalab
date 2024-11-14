@@ -141,7 +141,7 @@ Purpose: Authenticates applications running on your local machine, setting up ap
 Usage: This command is used to set the Application Default Credentials (ADC), allowing applications to authenticate with Google Cloud APIs in a way that simulates how they would run in infra
 ::::::When you run gcloud auth application-default login, it opens a browser window for authentication, then stores the credentials in a JSON file in a specific location (~/.config/gcloud/application_default_credentials.json). These credentials are used by Google Cloud client libraries (like google-auth ) to authenticate requests. terraform will use for example
 
-### 3. terraform coding
+### 4. terraform coding
   ```bash
   use tf_foundation terraform code to prepare bucket for project state fiel to save and later on it will be used in the xdata-lab tf code as backend
   p.s you can create it manualy as well
@@ -282,7 +282,7 @@ IT WILL TAKES LITTLE TIME BUT TO REFACTOR ALL THIS AS MODULAR < WOULD BE BETTER 
       |   Bucket (Static        |
       |    Content)             |
       +-------------------------+
-
+```
 
 ![Alt text](image.png)
 
