@@ -1,0 +1,1 @@
+### tf_foudnation to create remote backend bucket for relevant env to save state, p.s you can create it manualy in advance ,but this repo creates with tf  for this repo backend used local
